@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: hwb(200 99% 0%);
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/* Open sidenavbar in SideNavbar.jsx */
+.sidenavbar {
+  padding-top: 25px;
+}
+
+.sidenavbar .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenavbar .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.sidenavbar .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sidenavbar .sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenavbar .openbtn {
+  margin-left: 30px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Konten */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 30px 20px;
+  border-radius: 5px;
+}
+
+.judul {
+  margin-bottom: 10px;
+  font-family: "Major Mono Display", monospace;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.home-section .btn {
+  display: inline-block;
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 13px;
+  font-family: inherit;
+}
+
+.home-section .header {
+  text-align: center;
+}
+
+.home-section .header p {
+  margin: 10px 0 25px 0px;
+  font-size: 20px;
+}
+
+.home-section .header p span {
+  color: steelblue;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.home-section .konten .addtask {
+  margin: 15px 0;
+}
+
+.home-section .konten .addtask input {
+  width: 82%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+}
+
+.home-section .konten .showtask .row {
+  margin-bottom: 10px;
+  border-radius: 6px;
+  padding: 15px 15px;
+  background-color: aliceblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home-section .konten .showtask .checkbox {
+  margin: auto 0;
+  width: 30px;
+  height: 30px;
+}
+
+.home-section .konten .showtask .task-title {
+  font-size: 16px;
+  padding: 11px 12px;
+  border-radius: 10px;
+  background-color: #fcfeff;
+  border: 1px solid #d8d8d8;
+  margin-left: 10px;
+}
+
+.home-section .konten .showtask .completed {
+  text-decoration: line-through;
+}
+/*# sourceMappingURL=style.css.map */

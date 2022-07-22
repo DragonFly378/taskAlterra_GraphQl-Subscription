@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: hwb(200 99% 0%);
+
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/* Open sidenavbar in SideNavbar.jsx */
+.sidenavbar {
+  padding-top: 25px;
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+    .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+      cursor: pointer;
+    }
+
+    a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+
+      &:hover {
+        color: #f1f1f1;
+      }
+    }
+  }
+
+  .openbtn {
+    margin-left: 30px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+}
+
+/* Konten */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 30px 20px;
+  border-radius: 5px;
+}
+.judul {
+  margin-bottom: 10px;
+  font-family: "Major Mono Display", monospace;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.home-section {
+  .btn {
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: inherit;
+  }
+
+  .header {
+    text-align: center;
+
+    p {
+      margin: 10px 0 25px 0px;
+      font-size: 20px;
+
+      span {
+        color: steelblue;
+        font-weight: bold;
+        font-style: italic;
+      }
+    }
+  }
+
+  .konten {
+    .addtask {
+      margin: 15px 0;
+
+      input {
+        width: 82%;
+        height: 40px;
+        margin: 5px;
+        padding: 3px 7px;
+        font-size: 17px;
+      }
+    }
+
+    .showtask {
+      .row {
+        margin-bottom: 10px;
+        border-radius: 6px;
+        padding: 15px 15px;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: space-between;
+      }
+      .checkbox {
+        margin: auto 0;
+        width: 30px;
+        height: 30px;
+      }
+      .task-title {
+        font-size: 16px;
+        padding: 11px 12px;
+        border-radius: 10px;
+        background-color: #fcfeff;
+        border: 1px solid rgb(216, 216, 216);
+        margin-left: 10px;
+      }
+
+      .completed {
+        text-decoration: line-through;
+      }
+    }
+  }
+}
